@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<JuPedSim project="JPS-Project" version="0.7"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <header>
+    <!-- seed used for initialising random generator -->
+    <seed>12542</seed>
+    <max_sim_time>20</max_sim_time>
+    <!-- geometry file -->
+    <geometry>../geo.xml</geometry>    
+    <trajectories format="plain" fps="10">
+      <file location="{{location}}" />
+    </trajectories>
+  </header>
+  <routing>
+  </routing>
+
+  <!--persons information and distribution -->
+  <agents operational_model_id="{{model}}">
+    <agents_distribution>
+      <group group_id="0" agent_parameter_id="1" room_id="0" subroom_id="0" number="0" goal_id="-1"
+             router_id="2" />
+    </agents_distribution>
+    <agents_sources>
+      <file>../sources.xml</file>
+    </agents_sources>
+  </agents>
+  <!-- These parameters may be overwritten -->
+  <operational_models>
+    <model operational_model_id="1" description="gcfm">      
+      <model_parameters>
+        <stepsize>0.01</stepsize>
+        <linkedcells enabled="true" cell_size="2.2" />
+        <force_ped nu="0.0" dist_max="0" disteff_max="2" interpolation_width="0.1" />
+        <force_wall nu="0.0" dist_max="0" disteff_max="2" interpolation_width="0.1" />
+        <!-- strategy  -->       
+        <exit_crossing_strategy>8</exit_crossing_strategy>
+        <delta_h>0.0625</delta_h>
+        <wall_avoid_distance>{{wall}}</wall_avoid_distance>
+        <use_wall_avoidance>true</use_wall_avoidance>
+
+      </model_parameters>
+      <agent_parameters agent_parameter_id="1">
+        <v0 mu="1.0" sigma="0.0" />
+        <bmax mu="0.15" sigma="0.00" />
+        <bmin mu="0.15" sigma="0.00" />
+        <amin mu="0.15" sigma="0.00" />
+        <tau mu="0.01" sigma="0.00" />
+        <atau mu="0.0" sigma="0.00" />
+      </agent_parameters>      
+    </model>
+
+    <model operational_model_id="3" description="Tordeux2015">
+      <model_parameters>
+        <stepsize>0.01</stepsize>
+        
+        <linkedcells enabled="true" cell_size="2"/>
+        <force_ped  a="0" D="0.2"/>
+        <force_wall a="0" D="0.02"/>
+        <exit_crossing_strategy>8</exit_crossing_strategy>
+        <delta_h>0.0625</delta_h>
+        <wall_avoid_distance>{{wall}}</wall_avoid_distance>
+        <use_wall_avoidance>true</use_wall_avoidance>
+
+      </model_parameters>
+      <agent_parameters agent_parameter_id="1">
+        <v0 mu="1.0" sigma="0.0" />
+        <bmax mu="0.15" sigma="0.0" />
+        <bmin mu="0.15" sigma="0.0" />
+        <amin mu="0.15" sigma="0.0" />
+        <atau mu="0." sigma="0.0" />        
+        <T mu="1" sigma="0.0" />
+      </agent_parameters>
+    </model>
+
+
+    
+  </operational_models>
+
+  <route_choice_models>
+    <router router_id="2" description="ff_global_shortest">
+      <parameters>
+      </parameters>
+    </router>
+    
+  </route_choice_models>
+
+</JuPedSim>

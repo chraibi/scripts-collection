@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JPScore project="JPS-Project" version="0.8">
+  <agents_sources><!-- frequency in persons/seconds -->
+    <source id="1" group_id="0" startY="-0.5" startX="3.5" time="1" agents_max="1"/>
+    <source id="2"  N_create="1" group_id="0" startY="-1.5" startX="3.5" time="5"  agents_max="1"/>
+    <source id="3"  N_create="1" group_id="0" startY="-2.5" startX="3.5" time="10" agents_max="1"/>
+  </agents_sources>
+</JPScore>
+
+
+
