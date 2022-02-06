@@ -1,7 +1,7 @@
 # Create fit of nearly orthogonal data
 
 This script fits data as shown in Fig. 5 in
-[this Paper](https://juser.fz-juelich.de/record/904621/)
+[this Paper](https://juser.fz-juelich.de/record/904621/).
 
 The following actions are executed:
 
@@ -26,7 +26,7 @@ Apart from some standard Python3 libraries this script uses
 
 ## Result
 
-For the data in files [freesm1](freesm1.txt) and [vm1](vm1.txt)
+For the data in files [freesm1.txt](freesm1.txt) and [vm1.txt](vm1.txt).
 
 we get the following results:
 

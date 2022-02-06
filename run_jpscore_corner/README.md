@@ -1,6 +1,10 @@
-# Create N-t-diagram
+# Movement around a corner
 
-This script runs several [jpscore](https://www.jupedsim.org/jpscore_introduction.html)-simulations.
+This script runs several [jpscore](https://www.jupedsim.org/)-simulations in a corner and tests for several models 
+the influence of the wall avoidance parameter in the floor-field router.
+
+![corner](geometry.png)
+
 The script relies on a template-inifile (called masterfile) to produce [inifiles](https://www.jupedsim.org/jpscore_inifile.html).
 
 The following actions are executed:

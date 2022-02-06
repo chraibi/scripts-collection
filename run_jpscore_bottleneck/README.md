@@ -2,6 +2,9 @@
 
 This script runs several [jpscore](https://www.jupedsim.org/jpscore_introduction.html)
 simulations and produces an N-t-diagram.
+
+![bottlenck](geometry.png)
+
 The script relies on a template-inifile (called masterfile) to produce [inifiles](https://www.jupedsim.org/jpscore_inifile.html).
 
 The following actions are executed:
