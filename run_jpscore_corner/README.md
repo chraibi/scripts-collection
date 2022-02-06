@@ -1,9 +1,8 @@
 # Movement around a corner
 
-This script runs several [jpscore](https://www.jupedsim.org/)-simulations in a corner and tests for several models 
-the influence of the wall avoidance parameter in the floor-field router.
-
-![corner](geometry.png)
+This script runs several [jpscore](https://www.jupedsim.org/)-simulations in a
+corner and tests for several models the influence of the
+`wall avoidance parameter` in the floor-field router.
 
 The script relies on a template-inifile (called masterfile) to produce [inifiles](https://www.jupedsim.org/jpscore_inifile.html).
 
