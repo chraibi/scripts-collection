@@ -30,10 +30,10 @@ For the data in files [freesm1.txt](freesm1.txt) and [vm1.txt](vm1.txt).
 
 we get the following results:
 
-### Testing all possible angles
+### Without rotation
 
-![result](result.gif)
+![result](000.png)
 
-### Optimal angle
+### With rotation
 
-![optimal angle](theta_1.76.png)
+![optimal angle](056.png)
